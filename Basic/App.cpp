@@ -1,35 +1,37 @@
 #include <iostream>
 #include "App.h"
 
-App* singleton;
-
-void timer(int id){
-    // This will get called every 16 milliseconds after
-    // you call it once
+App::App(int argc, char** argv, int width, int height, const char* title): GlutApp(argc, argv, width, height, title)
+{
     
-    // If you want to manipulate the app in here
-    // do it through the singleton pointer
+    addComponent(new Game());
     
-    glutTimerFunc(16, timer, id);
+    fullscreen = false;
 }
 
-
-App::App(int argc, char** argv, int width, int height, const char* title): GlutApp(argc, argv, width, height, title){
-   
-
-}
-
-void App::draw() {
- 
-
+void App::draw() const {
+    for (std::vector<AppComponent*>::const_iterator i = components.begin(); i != components.end(); ++i) {
+        (*i)->draw();
+    }
 }
 
 void App::keyDown(unsigned char key, float x, float y){
     if (key == 27){
         exit(0);
     }
+    else if (key == 'f'){
+        toggleFullScreen();
+    }
+    else{
+        for (std::vector<AppComponent*>::iterator i = components.begin(); i != components.end(); ++i) {
+            (*i)->handleKeyDown(key, x, y);
+        }
+    }
 }
 
-App::~App(){
+App::~App(){    
+    for (std::vector<AppComponent*>::iterator i = components.begin(); i != components.end(); ++i) {
+        delete *i;
+    }
     std::cout << "Exiting..." << std::endl;
 }
