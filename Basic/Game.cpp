@@ -64,4 +64,7 @@ Game::~Game(){
     stop();
     //delete objects
     //delete mushroom;
+    delete purpleTile;
+    delete frog;
+    delete car;
 }
