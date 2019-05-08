@@ -16,6 +16,17 @@ class Game: public AppComponent, private Timer{
 //    bool hit;
 //    float theta;
 //    float deg;
+    TexRect* frogLives;
+    TexRect* purpleTile;
+    TexRect* car;
+    AnimatedRect* frog;
+    
+    bool up;
+    bool down;
+    bool left;
+    bool right;
+    bool hit;
+    bool frogAlive;
 public:
 //    AnimatedRect* explosion;
     
