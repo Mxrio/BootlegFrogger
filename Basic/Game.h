@@ -4,22 +4,15 @@
 #include "AppComponent.h"
 #include "AnimatedRect.h"
 #include "Timer.h"
+#include "Row.h"
+#include "Board.h"
 
 class Game: public AppComponent, private Timer{
-//    TexRect* mushroom;
-//    Rect* projectile;
-//    
-//    bool projectileVisible;
-//    bool mushroomVisible;
-//    bool up;
-//    bool left;
-//    bool hit;
-//    float theta;
-//    float deg;
-    TexRect* frogLives;
-    TexRect* purpleTile;
-    TexRect* car;
-    AnimatedRect* frog;
+//    TexRect* frogLives;
+//    TexRect* car;
+//    AnimatedRect* frog;
+    
+    Board* gameBoard;
     
     bool up;
     bool down;
