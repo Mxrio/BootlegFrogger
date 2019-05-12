@@ -16,11 +16,12 @@ Figure out a structure for the objects that are going to be used.
 Game Structure:
 - Creating the player frog
 - Create the gui
-- Create the map
-- Split the map into a number of rows, most likely 12. 1 at the start (safe), 5 on the road, 1 in the middle (safe), 4-5 in the river, and 1 more as the goal. 
-- Perhaps use class to dictate how many TexRects/AnimatedRects are present at any given row. Possibly use an ID or some sort of number to know which row it belongs to make setting their y-axis easier.
+- Create the map (done)
+- Split the map into a number of rows, most likely 12. 1 at the start (safe), 5 on the road, 1 in the middle (safe), 4-5 in the river, and 1 more as the goal.  (done)
+- Perhaps use class to dictate how many TexRects/AnimatedRects are present at any given row. Possibly use an ID or some sort of number to know which row it belongs to make setting their y-axis easier. (done)
 - Obviously, WASD or Arrow controls, no pause system cause fuck em.
-- The goal will be comprised of separated textured rects, the actual endposts and the backrow which is just a decoration. To reach the end, the frog must succeed collision with an endpost. Once that endpost is taken, another frog may not succeed a collision check there and will result in death.
+- The goal will be comprised of separated textured rects, the actual endposts and the backrow which is just a decoration. To reach the end, the frog must succeed collision with an endpost. Once that endpost is taken, another frog may not succeed a collision check there and will result in death. (done)
+Addendum: To simplify the game, the end goal is comprised of simple purple_tile TexRects and the goal is simply to get from one side to the other. No multiple levels or multiple frogs to win.
 
 Frog/Player Character:
 - The frog will use two (maybe three if North and South cannot be flipped) sprite sheets for all 4 compass orientations and animations corresponding with each. Frog_WE and Frog_NS will simply be flipped to correspond with the opposite orientation. 
