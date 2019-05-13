@@ -99,6 +99,16 @@ void SpawnRow::action()
     }
 }
 
+void SpawnRow::StopIt()
+{
+    stop();
+}
+
+void SpawnRow::StartIt()
+{
+    start();
+}
+
 void SpawnRow::newSpawn()
 {
     float buffer = startingPoint;

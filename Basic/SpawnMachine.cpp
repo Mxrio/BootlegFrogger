@@ -29,7 +29,7 @@ void SpawnMachine::startTimers()
 {
     for (std::vector<SpawnRow*>::iterator i = spawners.begin(); i != spawners.end(); ++i)
     {
-        (*i)->start();
+        (*i)->StartIt();
     }
 }
 
@@ -37,7 +37,7 @@ void SpawnMachine::stopTimers()
 {
     for (std::vector<SpawnRow*>::iterator i = spawners.begin(); i != spawners.end(); ++i)
     {
-        (*i)->stop();
+        (*i)->StopIt();
     }
 }
 

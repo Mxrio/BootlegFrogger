@@ -13,9 +13,7 @@ Game::Game()
     std::string purpleTile = assetDirectory + "grass_tile.png";
     std::string voidTile = assetDirectory + "void_tile.png";
     std::string riverTile = assetDirectory + "river_tile.png";
-    std::string grassBackrow = "";
-    std::string grassMidRow = "";
-    std::string grassFrontRow = "";
+    //std::string grassTile = assetDirectory + "grass_goal.png";
     
     std::string frogN = assetDirectory + "Frog_N.png";
     std::string frogWE = assetDirectory + "Frog_WE.png";

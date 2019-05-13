@@ -34,6 +34,10 @@ public:
     
     void action();
     
+    void StopIt();
+    
+    void StartIt();
+    
     bool VecContains(float, float, float, float);
     
     virtual ~SpawnRow();
