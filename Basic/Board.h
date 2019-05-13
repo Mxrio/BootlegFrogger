@@ -23,6 +23,8 @@ public:
     
     virtual void draw();
     
+    float getRowY(int);
+    
     ~Board();
 };
 

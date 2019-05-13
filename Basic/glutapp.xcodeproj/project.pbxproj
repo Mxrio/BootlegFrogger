@@ -18,6 +18,12 @@
 		17609DC7219C7B5700F85383 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17609DC6219C7B5700F85383 /* CoreFoundation.framework */; };
 		17609DCB219C9C3E00F85383 /* AnimatedRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DC9219C9C3E00F85383 /* AnimatedRect.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
 		17609DCE219CA02D00F85383 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17609DCC219CA02D00F85383 /* Timer.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		17CBE741227B0DAB004179ED /* TextBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17CBE73F227B0DAB004179ED /* TextBox.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		17FAB37B2278B0900024F60A /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17FAB3792278B0900024F60A /* Game.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		4E33AD0F228377330022126F /* Row.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E33AD0D228377330022126F /* Row.cpp */; };
+		4E33AD12228407A80022126F /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E33AD10228407A80022126F /* Board.cpp */; };
+		4E33AD152288C74A0022126F /* SpawnRow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E33AD132288C74A0022126F /* SpawnRow.cpp */; };
+		4E33AD182288EAC70022126F /* SpawnMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E33AD162288EAC70022126F /* SpawnMachine.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +57,20 @@
 		17609DCA219C9C3E00F85383 /* AnimatedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedRect.h; sourceTree = "<group>"; };
 		17609DCC219CA02D00F85383 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		17609DCD219CA02D00F85383 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		1790AEB0227FD68100402BF4 /* AppComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppComponent.h; sourceTree = "<group>"; };
+		17CBE73D227B0CF6004179ED /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		17CBE73F227B0DAB004179ED /* TextBox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextBox.cpp; sourceTree = "<group>"; };
+		17CBE740227B0DAB004179ED /* TextBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextBox.h; sourceTree = "<group>"; };
+		17FAB3792278B0900024F60A /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		17FAB37A2278B0900024F60A /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		4E33AD0D228377330022126F /* Row.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Row.cpp; sourceTree = "<group>"; };
+		4E33AD0E228377330022126F /* Row.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Row.h; sourceTree = "<group>"; };
+		4E33AD10228407A80022126F /* Board.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
+		4E33AD11228407A80022126F /* Board.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		4E33AD132288C74A0022126F /* SpawnRow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpawnRow.cpp; sourceTree = "<group>"; };
+		4E33AD142288C74A0022126F /* SpawnRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpawnRow.h; sourceTree = "<group>"; };
+		4E33AD162288EAC70022126F /* SpawnMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpawnMachine.cpp; sourceTree = "<group>"; };
+		4E33AD172288EAC70022126F /* SpawnMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpawnMachine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,18 +94,32 @@
 				173FEF171AA63B22006CCB85 /* GLUT.framework */,
 				173FEF151AA63B1B006CCB85 /* OpenGL.framework */,
 				173FEF0B1AA63AC4006CCB85 /* app_main.cpp */,
+				1790AEB0227FD68100402BF4 /* AppComponent.h */,
 				17609DB7219BF07300F85383 /* App.h */,
 				17609DB6219BF07300F85383 /* App.cpp */,
+				17FAB3792278B0900024F60A /* Game.cpp */,
+				17FAB37A2278B0900024F60A /* Game.h */,
+				4E33AD10228407A80022126F /* Board.cpp */,
+				4E33AD11228407A80022126F /* Board.h */,
+				4E33AD0D228377330022126F /* Row.cpp */,
+				4E33AD0E228377330022126F /* Row.h */,
+				4E33AD132288C74A0022126F /* SpawnRow.cpp */,
+				4E33AD142288C74A0022126F /* SpawnRow.h */,
+				4E33AD162288EAC70022126F /* SpawnMachine.cpp */,
+				4E33AD172288EAC70022126F /* SpawnMachine.h */,
 				1727D28B219145520048CB99 /* GlutApp.h */,
 				1727D28A219145520048CB99 /* GlutApp.cpp */,
 				17609DCD219CA02D00F85383 /* Timer.h */,
 				17609DCC219CA02D00F85383 /* Timer.cpp */,
-				17609DC9219C9C3E00F85383 /* AnimatedRect.cpp */,
-				17609DCA219C9C3E00F85383 /* AnimatedRect.h */,
+				17CBE73D227B0CF6004179ED /* Shape.h */,
+				17CBE73F227B0DAB004179ED /* TextBox.cpp */,
+				17CBE740227B0DAB004179ED /* TextBox.h */,
 				17609DC1219C098400F85383 /* Rect.h */,
 				17609DC0219C098400F85383 /* Rect.cpp */,
 				17609DC4219C0DE800F85383 /* TexRect.h */,
 				17609DC3219C0DE800F85383 /* TexRect.cpp */,
+				17609DC9219C9C3E00F85383 /* AnimatedRect.cpp */,
+				17609DCA219C9C3E00F85383 /* AnimatedRect.h */,
 				173FEF021AA63A07006CCB85 /* Products */,
 				17609DBA219C077D00F85383 /* Frameworks */,
 			);
@@ -134,7 +168,7 @@
 		173FEEF91AA63A07006CCB85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Angelo Kyrilov";
 				TargetAttributes = {
 					173FEF001AA63A07006CCB85 = {
@@ -144,10 +178,11 @@
 			};
 			buildConfigurationList = 173FEEFC1AA63A07006CCB85 /* Build configuration list for PBXProject "glutapp" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 173FEEF81AA63A07006CCB85;
 			productRefGroup = 173FEF021AA63A07006CCB85 /* Products */;
@@ -167,9 +202,15 @@
 				17609DB8219BF07300F85383 /* App.cpp in Sources */,
 				173FEF0C1AA63AC4006CCB85 /* app_main.cpp in Sources */,
 				17609DCB219C9C3E00F85383 /* AnimatedRect.cpp in Sources */,
+				17FAB37B2278B0900024F60A /* Game.cpp in Sources */,
 				1727D28C219145520048CB99 /* GlutApp.cpp in Sources */,
 				17609DC2219C098400F85383 /* Rect.cpp in Sources */,
+				4E33AD0F228377330022126F /* Row.cpp in Sources */,
+				4E33AD12228407A80022126F /* Board.cpp in Sources */,
 				17609DCE219CA02D00F85383 /* Timer.cpp in Sources */,
+				17CBE741227B0DAB004179ED /* TextBox.cpp in Sources */,
+				4E33AD182288EAC70022126F /* SpawnMachine.cpp in Sources */,
+				4E33AD152288C74A0022126F /* SpawnRow.cpp in Sources */,
 				17609DC5219C0DE800F85383 /* TexRect.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +222,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -233,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

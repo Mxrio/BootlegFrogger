@@ -14,13 +14,11 @@ Row::Row(const char* file, float x, float y, float w, float h, int row, float ma
     //change to synergize with Template container instead of vector
     float coordCheck = x;
     int runs = 0;
-    //std::cout << "Coordcheck is " << coordCheck << std::endl;
     while(coordCheck <= max)
     {
         textures.push_back(new TexRect(file, x + ((w + sepFactor) * runs), y - (h * row), w, h));
         coordCheck = coordCheck + w + sepFactor;
         runs++;
-//        std::cout << "The width is " << w << std::endl;
     }
     rowNum = row;
     
@@ -35,9 +33,9 @@ void Row::draw()
     }
 }
 
-void Row::contains()
+float Row::getConstY()
 {
-    
+    return textures[0]->getY();
 }
 
 Row::~Row()

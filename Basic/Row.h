@@ -15,7 +15,6 @@
 
 class Row
 {
-    //change from Vector to template container later.
     std::vector<TexRect*> textures;
     int rowNum;
     
@@ -25,7 +24,7 @@ public:
     
     virtual void draw();
     
-    void contains();
+    float getConstY();
     
     virtual ~Row();
 };

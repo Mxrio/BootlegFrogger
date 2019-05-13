@@ -26,6 +26,11 @@ void Board::draw()
     }
 }
 
+float Board::getRowY(int rowN)
+{
+    return rows[rowN]->getConstY();
+}
+
 Board::~Board()
 {
     for (std::vector<Row*>::iterator i = rows.begin(); i != rows.end(); ++i)
